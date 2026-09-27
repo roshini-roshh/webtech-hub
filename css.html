@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS3 concepts demonstration">
+    <title>WebTech Hub - CSS3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header">
+    <div class="container">
+        <h1>WebTech Hub</h1>
+        <p>CSS3 Concepts</p>
+
+        <nav>
+            <a href="index.html">HTML5</a>
+            <a class="active" href="css.html">CSS3</a>
+            <a href="form.html">Forms & Inputs</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h2>CSS3 – Styling & Responsive Design</h2>
+        <p>Types of CSS, positioning, box model, text flow, dropdowns and media queries.</p>
+    </section>
+
+    <section class="card">
+        <h2>1. Types of CSS</h2>
+        <div class="three-columns">
+            <div>
+                <h3>Inline CSS</h3>
+                <p style="font-weight:bold;">This text uses inline CSS.</p>
+            </div>
+            <div>
+                <h3>Internal CSS</h3>
+                <p>CSS written inside the <code>&lt;style&gt;</code> tag.</p>
+            </div>
+            <div>
+                <h3>External CSS</h3>
+                <p>This page uses <code>styles.css</code>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>2. Conflicting Style Sheets</h2>
+        <p class="conflict-demo">This element demonstrates CSS priority. The external stylesheet gives the base style, while a more specific selector can override it.</p>
+        <p><strong>General priority:</strong> Inline style &gt; ID selector &gt; class selector &gt; element selector.</p>
+    </section>
+
+    <section class="card">
+        <h2>3. Positioning Elements</h2>
+        <div class="position-area">
+            <div class="position-static">Static</div>
+            <div class="position-relative">Relative</div>
+            <div class="position-absolute">Absolute</div>
+            <div class="position-sticky">Sticky</div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>4. Element Dimension</h2>
+        <div class="dimension-demo">Width: 100% | Max-width: 500px | Min-height: 80px</div>
+    </section>
+
+    <section class="card">
+        <h2>5. Box Model</h2>
+        <div class="box-model-demo">
+            <div class="box-content">CONTENT</div>
+        </div>
+        <p class="center-text">Content → Padding → Border → Margin</p>
+    </section>
+
+    <section class="card">
+        <h2>6. Text Flow</h2>
+        <div class="float-demo">
+            <div class="float-box">FLOAT</div>
+            <p>
+                This paragraph demonstrates text flowing around a floated element.
+                CSS text flow is useful when arranging images, cards and content.
+                The <code>float</code> property allows text to wrap around an element.
+            </p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>7. Dropdown Menu</h2>
+        <div class="dropdown">
+            <button>Hover Me ▼</button>
+            <div class="dropdown-content">
+                <a href="index.html">HTML5</a>
+                <a href="css.html">CSS3</a>
+                <a href="form.html">Forms</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>8. Media Queries</h2>
+        <p>Resize the browser window. The cards and navigation automatically adapt to smaller screens.</p>
+        <div class="responsive-grid">
+            <div>Responsive Card 1</div>
+            <div>Responsive Card 2</div>
+            <div>Responsive Card 3</div>
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>9. JavaScript with CSS – Dynamic Styles</h2>
+        <p>JavaScript can change CSS properties dynamically through the DOM.</p>
+        <div id="styleBox" style="padding:20px;background:#eeeaff;border-radius:10px;margin:15px 0;">
+            Click the button to change this element's style using JavaScript.
+        </div>
+        <button id="styleBtn" type="button" class="button">Apply Dynamic Style</button>
+    </section>
+
+    <section class="card">
+        <h2>10. JavaScript Timer & Animated Effect</h2>
+        <p>A timer is used to create a simple movement effect.</p>
+        <button id="timerBtn" type="button" class="button">Start Animation</button>
+        <div id="timerBox" style="width:100px;padding:12px;margin-top:15px;background:#202040;color:white;border-radius:8px;text-align:center;">
+            Move
+        </div>
+    </section>
+
+    <div class="page-links">
+        <a class="button secondary" href="index.html">← Previous</a>
+        <a class="button" href="form.html">Next: Forms →</a>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>WebTech Hub | CSS3 Practical | <span id="currentYear"></span></p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

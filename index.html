@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 and CSS3 practical project">
+    <meta name="author" content="Student">
+    <title>WebTech Hub - HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal stylesheet example -->
+    <style>
+        .internal-demo {
+            border-left: 5px solid #6c63ff;
+            padding: 12px;
+            margin: 15px 0;
+            background: #f4f2ff;
+        }
+    </style>
+</head>
+
+<body>
+<header class="site-header">
+    <div class="container">
+        <h1>WebTech Hub</h1>
+        <p>HTML5 & CSS3 Practical Website</p>
+
+        <nav>
+            <a class="active" href="index.html">HTML5</a>
+            <a href="css.html">CSS3</a>
+            <a href="form.html">Forms & Inputs</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h2>HTML5 – Modern Web Page Structure</h2>
+        <p>Explore lists, tables, internal linking, semantic elements and HTML5 features.</p>
+        <!-- Inline style example -->
+        <a href="#topics" style="font-weight:bold;">Jump to Topics ↓</a>
+    </section>
+
+    <section id="topics" class="card">
+        <h2>1. Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Plan the page</li>
+            <li>Write HTML</li>
+            <li>Apply CSS</li>
+        </ol>
+
+        <h3>Definition List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language.</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets.</dd>
+        </dl>
+    </section>
+
+    <section class="card">
+        <h2>2. Tables</h2>
+        <table>
+            <caption>Student Marks</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>HTML5</th>
+                    <th>CSS3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Riya</td><td>92</td><td>89</td></tr>
+                <tr><td>Anu</td><td>88</td><td>94</td></tr>
+                <tr><td>Kavi</td><td>95</td><td>91</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="card">
+        <h2>3. Internal Linking</h2>
+        <p>
+            <a href="#meta">Go to Meta Elements</a> |
+            <a href="#structure">Go to Page Structure</a> |
+            <a href="css.html">Go to CSS3 Website</a>
+        </p>
+    </section>
+
+    <section id="meta" class="card">
+        <h2>4. Meta Elements</h2>
+        <ul>
+            <li><code>charset="UTF-8"</code> – character encoding</li>
+            <li><code>viewport</code> – responsive display on mobile devices</li>
+            <li><code>description</code> – describes the page</li>
+            <li><code>author</code> – identifies the author</li>
+        </ul>
+    </section>
+
+    <section id="structure" class="card">
+        <h2>5. HTML5 Page Structure Elements</h2>
+        <div class="structure-grid">
+            <article><strong>&lt;header&gt;</strong><span>Top section / heading</span></article>
+            <nav><strong>&lt;nav&gt;</strong><span>Navigation links</span></nav>
+            <main><strong>&lt;main&gt;</strong><span>Main content</span></main>
+            <section><strong>&lt;section&gt;</strong><span>Grouped content</span></section>
+            <article><strong>&lt;article&gt;</strong><span>Independent content</span></article>
+            <aside><strong>&lt;aside&gt;</strong><span>Related content</span></aside>
+            <footer><strong>&lt;footer&gt;</strong><span>Bottom information</span></footer>
+        </div>
+    </section>
+
+    <section class="card internal-demo">
+        <h2>Internal Stylesheet Example</h2>
+        <p>This box is styled using a <code>&lt;style&gt;</code> element inside this HTML page.</p>
+    </section>
+
+
+    <section class="card">
+        <h2>6. JavaScript Concepts</h2>
+        <p>JavaScript adds behavior and interactivity to this HTML page.</p>
+        <p id="collectionInfo">DOM Collections are being checked...</p>
+
+        <div class="three-columns">
+            <div>
+                <h3>Operators & Control Statements</h3>
+                <button id="operatorBtn" class="button" type="button">Run JS</button>
+            </div>
+            <div>
+                <h3>Functions, Objects & Arrays</h3>
+                <button id="functionBtn" class="button" type="button">Run Function</button>
+            </div>
+            <div>
+                <h3>Built-in Objects</h3>
+                <button id="builtInBtn" class="button" type="button">Show Result</button>
+            </div>
+        </div>
+
+        <p id="jsOutput" style="margin-top:15px;font-weight:bold;">
+            Click a button to see JavaScript output.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>7. DOM, Dynamic Style & Timer</h2>
+        <div id="styleBox" style="padding:20px;background:#eeeaff;border-radius:10px;margin-bottom:15px;">
+            This box can be changed by JavaScript.
+        </div>
+        <div class="form-actions">
+            <button id="styleBtn" type="button">Change Dynamic Style</button>
+            <button id="timerBtn" type="button">Start Animation</button>
+        </div>
+        <div id="timerBox" style="width:100px;padding:12px;margin-top:15px;background:#202040;color:white;border-radius:8px;text-align:center;">
+            Timer
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>8. Event Bubbling</h2>
+        <div id="bubbleParent" style="padding:25px;background:#eeeaff;border-radius:10px;">
+            Parent DIV
+            <button id="bubbleChild" type="button" style="margin-left:15px;padding:10px;">
+                Click Child
+            </button>
+        </div>
+        <p id="bubbleOutput" style="margin-top:10px;">Click the child button.</p>
+    </section>
+
+    <div class="page-links">
+        <a class="button" href="css.html">Next: CSS3 →</a>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>WebTech Hub | HTML5 & CSS3 Practical | <span id="currentYear"></span></p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS3 concepts demonstration">
+    <title>WebTech Hub - CSS3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header">
+    <div class="container">
+        <h1>WebTech Hub</h1>
+        <p>CSS3 Concepts</p>
+
+        <nav>
+            <a href="index.html">HTML5</a>
+            <a class="active" href="css.html">CSS3</a>
+            <a href="form.html">Forms & Inputs</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h2>CSS3 – Styling & Responsive Design</h2>
+        <p>Types of CSS, positioning, box model, text flow, dropdowns and media queries.</p>
+    </section>
+
+    <section class="card">
+        <h2>1. Types of CSS</h2>
+        <div class="three-columns">
+            <div>
+                <h3>Inline CSS</h3>
+                <p style="font-weight:bold;">This text uses inline CSS.</p>
+            </div>
+            <div>
+                <h3>Internal CSS</h3>
+                <p>CSS written inside the <code>&lt;style&gt;</code> tag.</p>
+            </div>
+            <div>
+                <h3>External CSS</h3>
+                <p>This page uses <code>styles.css</code>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>2. Conflicting Style Sheets</h2>
+        <p class="conflict-demo">This element demonstrates CSS priority. The external stylesheet gives the base style, while a more specific selector can override it.</p>
+        <p><strong>General priority:</strong> Inline style &gt; ID selector &gt; class selector &gt; element selector.</p>
+    </section>
+
+    <section class="card">
+        <h2>3. Positioning Elements</h2>
+        <div class="position-area">
+            <div class="position-static">Static</div>
+            <div class="position-relative">Relative</div>
+            <div class="position-absolute">Absolute</div>
+            <div class="position-sticky">Sticky</div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>4. Element Dimension</h2>
+        <div class="dimension-demo">Width: 100% | Max-width: 500px | Min-height: 80px</div>
+    </section>
+
+    <section class="card">
+        <h2>5. Box Model</h2>
+        <div class="box-model-demo">
+            <div class="box-content">CONTENT</div>
+        </div>
+        <p class="center-text">Content → Padding → Border → Margin</p>
+    </section>
+
+    <section class="card">
+        <h2>6. Text Flow</h2>
+        <div class="float-demo">
+            <div class="float-box">FLOAT</div>
+            <p>
+                This paragraph demonstrates text flowing around a floated element.
+                CSS text flow is useful when arranging images, cards and content.
+                The <code>float</code> property allows text to wrap around an element.
+            </p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>7. Dropdown Menu</h2>
+        <div class="dropdown">
+            <button>Hover Me ▼</button>
+            <div class="dropdown-content">
+                <a href="index.html">HTML5</a>
+                <a href="css.html">CSS3</a>
+                <a href="form.html">Forms</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>8. Media Queries</h2>
+        <p>Resize the browser window. The cards and navigation automatically adapt to smaller screens.</p>
+        <div class="responsive-grid">
+            <div>Responsive Card 1</div>
+            <div>Responsive Card 2</div>
+            <div>Responsive Card 3</div>
+        </div>
+    </section>
+
+    <div class="page-links">
+        <a class="button secondary" href="index.html">← Previous</a>
+        <a class="button" href="form.html">Next: Forms →</a>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>WebTech Hub | CSS3 Practical | <span id="currentYear"></span></p>
+</footer>
+</body>
+</html>
